@@ -34,7 +34,12 @@
 
 
     function print() {
-        const referencestring = document.getElementById("stApp_PODtxtReferenceNumber").children[0].innerText
+        const referenceHTML = document.getElementById("stApp_PODtxtReferenceNumber")
+        if (referenceHTML === null) {
+              document.body.prepend("Quick_POD: You need to be logged in to see the reference number, please login.");
+            return;
+        }
+        const referencestring = referenceHTML.children[0].innerText;
         document.title = 'POD_' + referencestring.match(".*-(.*?)-.*-.*")[1]
         setTimeout(() => document.getElementById("stApp_POD_btnPrint").click(), 250)
     }
