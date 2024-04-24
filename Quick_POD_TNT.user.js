@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Quick POD
+// @name         Quick POD TNT
 // @namespace    http://tampermonkey.net/
 // @version      2024-04-06
 // @description  TNT
