@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Quick POD
+// @name         Quick POD UPS
 // @namespace    http://tampermonkey.net/
 // @version      2024-04-01
 // @description  UPS
